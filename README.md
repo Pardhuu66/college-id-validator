@@ -37,15 +37,15 @@ college-id-validator/
 ├── requirements.txt
 ├── config.json
 ├── collegeDataSet.csv
-├── college\_id\_classifier.onnx
+├── college_id_classifier.onnx
 ├── main.py
-├── face\_detector.py
-├── image\_classifier.py
-├── ocr\_validator.py
-├── template\_validator.py
+├── face_detector.py
+├── image_classifier.py
+├── ocr_validator.py
+├── template_validator.py
 ├── models/
 │   ├── deploy.prototxt.txt
-│   └── res10\_300x300\_ssd\_iter\_140000.caffemodel
+│   └── res10_300x300_ssd_iter_140000.caffemodel
 ├── templates/
 │   └── (reference ID templates)
 ├── tests/
