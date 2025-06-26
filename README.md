@@ -67,35 +67,27 @@ Sample Response:
   "label": "genuine",
   "status": "approved"
 }
-🐳 Docker Commands
+
+---
+
+##🐳 Docker Commands
 Build Image:
 
-bash
-Copy
-Edit
 docker build -t college-id-validator .
+
 Run Container:
 
-bash
-Copy
-Edit
 docker run -p 8000:8000 college-id-validator
 Access API Docs:
 http://localhost:8000/docs
 
 Save Docker Image to .tar:
 
-bash
-Copy
-Edit
 docker save -o college-id-validator.tar college-id-validator
 Load Docker Image from .tar:
-
-bash
-Copy
-Edit
 docker load -i college-id-validator.tar
-📊 Results
+
+##📊 Results
 Image Classification Accuracy: ~90%
 
 OCR Text Extraction Accuracy: ~92%
