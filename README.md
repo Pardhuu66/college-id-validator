@@ -1,11 +1,3 @@
-Excellent catch — you’re right.
-The **"📤 Sample Response"** should be a sub-heading under **"Example API Request"** — inside the same section, with clean markdown hierarchy.
-
-Let me give you a **perfectly clean, properly indented, and structured markdown `README.md` file now — no weird breaks, no out-of-place headings**.
-
----
-
-```markdown
 # 🎓 College ID Validator
 
 An AI-powered offline system for detecting fake, altered, or non-genuine student ID cards using image classification, OCR, face detection, and template matching — deployed via FastAPI and Docker.
@@ -93,13 +85,13 @@ college-id-validator/
 
 ### 📦 Build Docker Image
 
-```bash
+```
 docker build -t college-id-validator .
 ```
 
 ### 🚀 Run Docker Container
 
-```bash
+```
 docker run -p 8000:8000 college-id-validator
 ```
 
@@ -109,13 +101,13 @@ docker run -p 8000:8000 college-id-validator
 
 ### 📤 Save Docker Image to .tar Archive
 
-```bash
+```
 docker save -o college-id-validator.tar college-id-validator
 ```
 
 ### 📥 Load Docker Image from .tar Archive
 
-```bash
+```
 docker load -i college-id-validator.tar
 ```
 
