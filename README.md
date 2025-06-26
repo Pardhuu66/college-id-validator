@@ -70,7 +70,7 @@ Sample Response:
 
 ---
 
-##🐳 Docker Commands
+## 🐳 Docker Commands
 Build Image:
 
 docker build -t college-id-validator .
@@ -86,8 +86,9 @@ Save Docker Image to .tar:
 docker save -o college-id-validator.tar college-id-validator
 Load Docker Image from .tar:
 docker load -i college-id-validator.tar
+---
 
-##📊 Results
+## 📊 Results
 Image Classification Accuracy: ~90%
 
 OCR Text Extraction Accuracy: ~92%
@@ -95,23 +96,18 @@ OCR Text Extraction Accuracy: ~92%
 Face Detection Success Rate: ~95%
 
 Stable performance within Docker containerized environment.
+---
 
-📚 References
-Dataset Inspiration from Kaggle
+## 📚 References
 
-Official Documentation for:
-
-EasyOCR
-
-OpenCV
-
-Docker
-
-Video Tutorials for Docker and FastAPI on YouTube
-
-ChatGPT and Grok AI for code debugging and optimization suggestions.
-
-Notion and technical blogs for selecting model architectures and design patterns.
+-Dataset Inspiration from Kaggle
+-Official Documentation for:
+-EasyOCR
+-OpenCV
+-Docker
+-Video Tutorials for Docker and FastAPI on YouTube
+-ChatGPT and Grok AI for code debugging and optimization suggestions.
+-Notion and technical blogs for selecting model architectures and design patterns.
 
 ✨ Author
-Pardhu Gudivada
+Pardha Sai Gudivada
