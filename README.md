@@ -54,16 +54,13 @@ Edit
 
 **Request Body:**
 
-```json
+json
 {
   "user_id": "test_user",
   "image_base64": "iVBORw0KGgoAAAANSUhEUgA..."
 }
 Sample Response:
 
-json
-Copy
-Edit
 {
   "user_id": "test_user",
   "validation_score": 0.89,
