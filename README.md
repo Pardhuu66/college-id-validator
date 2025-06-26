@@ -1,3 +1,11 @@
+Excellent catch — you’re right.
+The **"📤 Sample Response"** should be a sub-heading under **"Example API Request"** — inside the same section, with clean markdown hierarchy.
+
+Let me give you a **perfectly clean, properly indented, and structured markdown `README.md` file now — no weird breaks, no out-of-place headings**.
+
+---
+
+```markdown
 # 🎓 College ID Validator
 
 An AI-powered offline system for detecting fake, altered, or non-genuine student ID cards using image classification, OCR, face detection, and template matching — deployed via FastAPI and Docker.
@@ -7,44 +15,51 @@ An AI-powered offline system for detecting fake, altered, or non-genuine student
 ## 📌 Features
 
 - 📄 Image classification using MobileNetV2 (ONNX)
-- 🔍 OCR text extraction using EasyOCR
-- 👤 Face detection with OpenCV DNN
-- 📋 Template matching for layout verification
-- ⚖️ Score aggregation for final decision: Genuine, Suspicious, or Fake
-- 🚀 FastAPI-based REST API for easy integration
-- 📦 Dockerized for portable, environment-independent deployment
+- 🔍 OCR text extraction via EasyOCR
+- 👤 Face detection using OpenCV DNN
+- 📋 Template matching for reference ID layout verification
+- ⚖️ Aggregates confidence scores for final decision: Genuine, Suspicious, or Fake
+- 🚀 REST API powered by FastAPI
+- 📦 Packaged as a Docker container for portable, environment-independent deployment
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Python 3.11**
-- **FastAPI**, **Uvicorn**
-- **MobileNetV2 (ONNX)** with **ONNXRuntime**
-- **EasyOCR**, **OpenCV**, **OpenCV DNN**
-- **Docker**
-- **Pytest** for testing
+- Python 3.11
+- FastAPI, Uvicorn
+- MobileNetV2 (ONNX) with ONNXRuntime
+- EasyOCR, OpenCV, OpenCV DNN
+- Docker
+- Pytest for unit testing
 
 ---
 
 ## 📂 Project Structure
 
-college-id-validator/
-├── main.py
-├── ocr_validator.py
-├── image_classifier.py
-├── templates/
-│ └── (reference ID templates)
-├── models/
-│ └── college_id_classifier.onnx
-├── Dockerfile
-├── requirements.txt
-├── test_main.py
-└── README.md
+```
 
-yaml
-Copy
-Edit
+college-id-validator/
+├── Dockerfile
+├── README.md
+├── requirements.txt
+├── config.json
+├── collegeDataSet.csv
+├── college\_id\_classifier.onnx
+├── main.py
+├── face\_detector.py
+├── image\_classifier.py
+├── ocr\_validator.py
+├── template\_validator.py
+├── models/
+│   ├── deploy.prototxt.txt
+│   └── res10\_300x300\_ssd\_iter\_140000.caffemodel
+├── templates/
+│   └── (reference ID templates)
+├── tests/
+│   └── (unit test files)
+
+````
 
 ---
 
@@ -52,62 +67,93 @@ Edit
 
 **Endpoint:** `POST /validate-id`
 
-**Request Body:**
+### 📥 Request Body
 
-json
+```json
 {
   "user_id": "test_user",
   "image_base64": "iVBORw0KGgoAAAANSUhEUgA..."
 }
-Sample Response:
+````
 
+### 📤 Sample Response
+
+```json
 {
   "user_id": "test_user",
   "validation_score": 0.89,
   "label": "genuine",
   "status": "approved"
 }
+```
 
 ---
 
 ## 🐳 Docker Commands
-Build Image:
 
+### 📦 Build Docker Image
+
+```bash
 docker build -t college-id-validator .
+```
 
-Run Container:
+### 🚀 Run Docker Container
 
+```bash
 docker run -p 8000:8000 college-id-validator
-Access API Docs:
-http://localhost:8000/docs
+```
 
-Save Docker Image to .tar:
+### 📄 Access API Documentation
 
+[http://localhost:8000/docs](http://localhost:8000/docs)
+
+### 📤 Save Docker Image to .tar Archive
+
+```bash
 docker save -o college-id-validator.tar college-id-validator
-Load Docker Image from .tar:
+```
+
+### 📥 Load Docker Image from .tar Archive
+
+```bash
 docker load -i college-id-validator.tar
+```
+
 ---
 
 ## 📊 Results
-Image Classification Accuracy: ~90%
 
-OCR Text Extraction Accuracy: ~92%
+| Metric                        | Score |
+| :---------------------------- | :---- |
+| Image Classification Accuracy | \~90% |
+| OCR Text Extraction Accuracy  | \~92% |
+| Face Detection Success Rate   | \~95% |
 
-Face Detection Success Rate: ~95%
+✔️ Stable, consistent performance inside a Dockerized environment.
 
-Stable performance within Docker containerized environment.
 ---
 
 ## 📚 References
 
--Dataset Inspiration from Kaggle
--Official Documentation for:
--EasyOCR
--OpenCV
--Docker
--Video Tutorials for Docker and FastAPI on YouTube
--ChatGPT and Grok AI for code debugging and optimization suggestions.
--Notion and technical blogs for selecting model architectures and design patterns.
+* Dataset inspiration from Kaggle
+* Official Documentation:
 
-✨ Author
-Pardha Sai Gudivada
+  * EasyOCR
+  * OpenCV
+  * Docker
+* YouTube tutorials for FastAPI and Docker
+* ChatGPT and Grok AI for debugging and optimization
+* Notion templates and technical blogs for architecture design
+
+---
+
+## ✨ Author
+
+**Pardha Sai Gudivada**
+
+* [GitHub Profile](https://github.com/Pardhuu66)
+
+```
+
+---
+
