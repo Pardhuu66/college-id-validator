@@ -1,0 +1,14 @@
+fastapi==0.110.0
+uvicorn==0.29.0
+pydantic==2.7.1
+numpy==1.26.4
+opencv-python-headless==4.10.0.84
+onnxruntime==1.17.3
+Pillow==10.3.0
+httpx==0.27.0
+thefuzz==0.22.1
+torch==2.3.0+cpu
+torchvision==0.18.0+cpu
+easyocr==1.7.1
+tensorflow-cpu==2.17.0
+-f https://download.pytorch.org/whl/torch_stable.html
