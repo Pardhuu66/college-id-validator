@@ -117,7 +117,7 @@ docker load -i college-id-validator.tar
 
 | Metric                        | Score |
 | :---------------------------- | :---- |
-| Image Classification Accuracy | \~90% |
+| Image Classification Accuracy | \~96% |
 | OCR Text Extraction Accuracy  | \~92% |
 | Face Detection Success Rate   | \~95% |
 
